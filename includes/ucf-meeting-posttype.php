@@ -181,7 +181,7 @@ if ( ! class_exists( 'UCF_Meeting_PostType' ) )  {
 				'show_ui'               => true,
 				'show_in_menu'          => true,
 				'menu_position'         => 5,
-				'menu_icon'             => 'dashicons-admin-users',
+				'menu_icon'             => 'dashicons-calendar-alt',
 				'show_in_admin_bar'     => true,
 				'show_in_nav_menus'     => true,
 				'can_export'            => true,
