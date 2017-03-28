@@ -174,7 +174,7 @@ if ( ! class_exists( 'UCF_Meeting_PostType' ) )  {
 				'label'                 => __( $plural, 'ucf_meetings' ),
 				'description'           => __( $plural, 'ucf_meetings' ),
 				'labels'                => self::labels( $singular, $plural ),
-				'supports'              => array( 'title', 'revisions', ),
+				'supports'              => array( 'title', 'revisions', 'custom-fields'),
 				'taxonomies'            => self::taxonomies(),
 				'hierarchical'          => false,
 				'public'                => true,

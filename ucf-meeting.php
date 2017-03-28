@@ -16,6 +16,7 @@ define( 'UCF_MEETINGS__STATIC_URL', UCF_DEGREE__PLUGIN_URL . '/static' );
 define( 'UCF_MEETINGS__PLUGIN_FILE', __FILE__ );
 
 include_once 'includes/ucf-meeting-posttype.php';
+include_once 'includes/class-ucf-meeting.php';
 
 if ( ! function_exists( 'ucf_meetings_plugin_activation' ) ) {
 	function ucf_meetings_plugin_activation() {
