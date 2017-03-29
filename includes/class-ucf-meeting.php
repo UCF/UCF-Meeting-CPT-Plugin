@@ -75,7 +75,7 @@ if ( ! class_exists( 'UCF_Meeting' ) ) {
 			$retval = array();
 
 			foreach( $posts as $post ) {
-				$date = new DateTime( $post->metadata['ucf_meeting_date'] );
+				$date = $post->metadata['ucf_meeting_date'];
 				$year = (string)$date->format( 'Y' );
 
 				// If year exists in array, add this to it.
