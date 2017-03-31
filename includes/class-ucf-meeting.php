@@ -14,7 +14,7 @@ if ( ! class_exists( 'UCF_Meeting' ) ) {
 		public static function all( $args=array() ) {
 			$defaults = array(
 				'post_type'      => 'meeting',
-				'posts_per_page' => -1
+				'posts_per_page' => -1,
 			);
 
 			$args = wp_parse_args( $args, $defaults );
@@ -70,7 +70,7 @@ if ( ! class_exists( 'UCF_Meeting' ) ) {
 		 * @param $args Array | An array of WP_Query Arguments
 		 * @return Array<int> => Array<WP_Post>
 		 **/
-		public static function group_by_year( $args=array() ) {
+		public static function group_by_year( $args=array(), $sort='DESC' ) {
 			$posts = self::all( $args );
 			$retval = array();
 
@@ -84,6 +84,13 @@ if ( ! class_exists( 'UCF_Meeting' ) ) {
 				} else {
 					$retval[$year] = array( $post );
 				}
+			}
+
+			// Sort keys if $sort variable is set.
+			if ( $sort === 'DESC' ) {
+				krsort( $retval );
+			} else if ( $sort === 'ASC' ) {
+				ksort( $retval );
 			}
 
 			return $retval;
