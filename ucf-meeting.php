@@ -12,7 +12,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 define( 'UCF_MEETINGS__PLUGIN_URL', plugins_url( basename( dirname( __FILE__ ) ) ) );
 define( 'UCF_MEETINGS__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-define( 'UCF_MEETINGS__STATIC_URL', UCF_DEGREE__PLUGIN_URL . '/static' );
+define( 'UCF_MEETINGS__STATIC_URL', UCF_MEETINGS__PLUGIN_URL . '/static' );
 define( 'UCF_MEETINGS__PLUGIN_FILE', __FILE__ );
 
 include_once 'includes/ucf-meeting-posttype.php';
