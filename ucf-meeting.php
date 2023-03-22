@@ -2,7 +2,7 @@
 /*
 Plugin Name: UCF Meetings Custom Post Type
 Description: Provides a custom post type for posting meetings.
-Version: 1.0.0
+Version: 1.0.1
 Authors: Jim Barnes
 License: GPL3
 */
